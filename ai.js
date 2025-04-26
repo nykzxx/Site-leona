@@ -16,6 +16,7 @@ function sendWebhook(id, content, timestamp){
 
   const response = fetch(botAPI, {
     method: "POST",
+    mode: 'no-cors',
     headers: {
       "Content-Type": "application/json"
     },
